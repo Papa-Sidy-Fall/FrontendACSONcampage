@@ -1,12 +1,14 @@
 import { useState } from 'react';
+import { presentationVideoUrl } from '../content/presentation.js';
 
-// Optional direct URL allows hosting the unchanged original outside the deployment.
-const source = import.meta.env.VITE_PRESENTATION_VIDEO_URL || '/videos/presentation-acson.mov';
+const source = import.meta.env.VITE_PRESENTATION_VIDEO_URL?.trim() || presentationVideoUrl;
+const downloadSource = source?.startsWith('https://res.cloudinary.com/')
+  ? source.replace('/video/upload/', '/video/upload/fl_attachment/')
+  : source;
 const poster = '/videos/presentation-poster.jpg';
 
 export default function PresentationVideo() {
-  const [unavailable, setUnavailable] = useState(() => !document.createElement('video')
-    .canPlayType('video/mp4; codecs="hvc1.1.6.L120.B0"'));
+  const [unavailable, setUnavailable] = useState(!source);
 
   return (
     <figure className="presentation-video mt-5" data-motion="card">
@@ -27,11 +29,13 @@ export default function PresentationVideo() {
             />}
       </div>
       {unavailable && <p className="mt-3 text-sm leading-relaxed text-white/85" role="status">
-        La lecture n’est pas disponible dans ce navigateur. Vous pouvez télécharger la vidéo pour la regarder.
+        {source
+          ? 'La lecture n’est pas disponible dans ce navigateur. Vous pouvez télécharger la vidéo pour la regarder.'
+          : 'La vidéo sera bientôt disponible.'}
       </p>}
-      <a className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-sm font-bold text-white hover:bg-white/10 transition" href={source} download>
+      {source && <a className="mt-3 inline-flex items-center gap-2 rounded-full border border-white/30 px-4 py-2 text-sm font-bold text-white hover:bg-white/10 transition" href={downloadSource} download>
         Télécharger la vidéo ↓
-      </a>
+      </a>}
     </figure>
   );
 }

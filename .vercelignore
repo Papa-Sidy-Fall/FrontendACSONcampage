@@ -1,5 +1,8 @@
 node_modules
+dist
 *.zip
 DEPLOI-NETLIFY.txt
 ouvrir-local.bat
 netlify.toml
+public/videos/presentation-acson.mov
+public/videos/presentation-acson.mp4

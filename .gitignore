@@ -17,6 +17,10 @@ dist-ssr
 !.env.example
 *.zip
 
+# La vidéo est hébergée sur Cloudinary ; les copies locales restent hors Git.
+public/videos/presentation-acson.mov
+public/videos/presentation-acson.mp4
+
 # Archives de l’ancien hébergement
 DEPLOI-NETLIFY.txt
 ouvrir-local.bat

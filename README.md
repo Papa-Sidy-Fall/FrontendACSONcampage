@@ -6,13 +6,8 @@ Aucun backend ni service d’IA n’est nécessaire. Les textes de campagne exis
 ## Lancer le site
 
 Prérequis : Node.js 22, version 22.12 ou supérieure.
-Après un clonage du dépôt, installer [Git LFS](https://git-lfs.com/) et récupérer
-la vidéo originale avant de construire le site :
-
-```bash
-git lfs install
-git lfs pull
-```
+L’URL Cloudinary de la vidéo est déjà configurée dans `src/content/presentation.js`.
+Aucune variable d’environnement n’est nécessaire.
 
 ```bash
 npm ci
@@ -39,21 +34,23 @@ Le site et son chatbot fonctionnent dans le navigateur, sans backend.
    - Installation : `npm ci`.
    - Build : `npm run build`.
    - Output Directory : `dist`.
-4. Dans le projet, ouvrir **Settings → Git**, activer **Git LFS**, puis lancer
-   **Redeploy**. Vercel récupère ainsi la vidéo originale de 108 Mo.
-   Si le premier build précède l’activation, il s’arrête avec une instruction claire
-   afin de ne pas publier un faux fichier vidéo.
-5. Aucune variable d’environnement n’est nécessaire avec cette configuration.
-   `VITE_PRESENTATION_VIDEO_URL` reste une option si la vidéo est hébergée séparément.
+4. Laisser les variables d’environnement vides : l’URL de la vidéo déjà importée
+   dans Cloudinary est fournie dans le code.
+5. Déployer la dernière version de `main`. Si le projet a déjà été créé, vérifier
+   que le déploiement utilise le nouveau commit, puis lancer Redeploy si nécessaire.
 
-[Prise en charge Git LFS dans Vercel](https://vercel.com/docs/project-configuration/git-settings#git-large-file-storage-lfs).
+La vidéo est servie par Cloudinary. Git LFS n’est plus nécessaire pour déployer
+la version actuelle du site. Aucune clé API Cloudinary ni autre secret n’est requis.
+L’URL est publique et intégrée au JavaScript visible dans le navigateur. Pour
+remplacer la vidéo, modifier `src/content/presentation.js` ou utiliser la variable
+facultative `VITE_PRESENTATION_VIDEO_URL` avec une autre URL HTTPS publique directe,
+puis relancer le build. `.env.example` documente cette option pour les essais locaux.
 
 `vercel.json` définit déjà le framework, le build, le dossier de sortie et des en-têtes de sécurité.
 La navigation utilise des ancres : aucune réécriture de routes n’est nécessaire.
 Utiliser le code source actuel ; les anciens ZIP Netlify ne contiennent pas ces améliorations.
 
-Autre possibilité, avec la CLI Vercel et un compte connecté, après hébergement
-externe de la vidéo et configuration de son URL :
+Autre possibilité, avec la CLI Vercel et un compte connecté :
 
 ```bash
 npx vercel
@@ -135,39 +132,26 @@ uniquement dans le navigateur du visiteur, sans envoi à l’équipe. Aucune col
 
 ## Vidéo de présentation
 
-- Original fourni : `../Vidéo de présentation/HDRR.MOV`, 107 750 936 octets,
-  environ 108 Mo (103 Mio), durée 78,6 secondes, HEVC Main, 1080 × 1920, 30 images/s,
-  son AAC. L’utilisateur a choisi de conserver cet original sans réencodage.
-- Copie strictement identique : `public/videos/presentation-acson.mov`.
-  L’original fourni reste intact. Les essais de compression réellement sans perte
-  sur un extrait augmentaient fortement le poids ; aucune version réencodée n’est utilisée.
-- Ce fichier est suivi par **Git LFS** dans `.gitattributes`, car il dépasse 100 Mio.
-  Le dépôt Git conserve un petit pointeur, Git LFS conserve les octets de l’original.
-  Après clonage, `git lfs pull` récupère la vidéo ; sur Vercel, activer Git LFS puis redéployer.
+- Original conservé intact hors dépôt : `../Vidéo de présentation/HDRR.MOV`,
+  107 750 936 octets, durée 78,6 secondes, HEVC Main, 1080 × 1920, 30 images/s,
+  son AAC. Sa copie identique est conservée dans le même dossier sous
+  `presentation-acson-original.mov`.
+- Copie web importée dans Cloudinary : `../Vidéo de présentation/presentation-acson-cloudinary.mp4`,
+  **86 030 624 octets (86,03 Mo)**, sous le plafond de 100 MB indiqué par l’utilisateur.
+  MP4 H.264 High, CRF 18, même définition et cadence, son AAC original copié et
+  en-tête faststart. Le réencodage de l’image n’est pas strictement sans perte.
+- Aucun fichier vidéo n’est inclus dans le dépôt courant ni dans `dist/`.
+  Le pointeur MOV et la règle Git LFS ont été retirés de la version actuelle.
+  Les archives des anciens commits restent inchangées.
 - Aperçu : `public/videos/presentation-poster.jpg`, extrait à 2 secondes.
 - Présentation dans la rubrique « Pourquoi je m’engage ». Lecture native lorsque
-  le navigateur annonce la prise en charge HEVC ; sinon aperçu, explication et lien
-  pour télécharger l’original. En cas d’échec de lecture, le même repli s’affiche.
+  le navigateur peut lire le MP4. En cas d’échec de lecture, aperçu, explication et
+  lien vers la vidéo restent disponibles. La détection HEVC de l’ancien fichier
+  a été retirée : elle empêchait certains navigateurs de lire un MP4 compatible.
 - Pas de lecture automatique. `preload="none"` évite de charger la vidéo au démarrage.
-  Le format original n’assure pas une lecture dans tous les navigateurs.
 
-Le déploiement recommandé utilise l’import Git et Git LFS. Pour héberger l’original
-ailleurs, notamment en cas de déploiement par CLI :
-
-1. Héberger le fichier original sur un stockage de fichiers servant une URL HTTPS
-   publique directe (type MIME adapté et requêtes Range pour la lecture).
-   Aucun fichier n’a été envoyé à un service externe dans cette intervention.
-2. Renseigner `VITE_PRESENTATION_VIDEO_URL` dans les variables du projet Vercel,
-   avec cette URL, puis relancer le build. Pour les essais locaux, utiliser `.env.local`.
-3. Pour ce parcours CLI uniquement, ajouter `public/videos/presentation-acson.mov`
-   à `.vercelignore`. Garder l’original fourni dans le dossier parent. Ne pas ajouter
-   cette exclusion pour le parcours recommandé Git LFS.
-   Garder l’aperçu JPEG dans `public/videos/`.
-4. Vérifier la lecture ou le téléchargement de l’original sur le site publié.
-
-Le fichier dépasse la limite de 100 Mio d’un fichier GitHub standard.
-[Documentation GitHub](https://docs.github.com/en/repositories/working-with-files/managing-large-files/about-large-files-on-github).
-La CLI Vercel limite l’ensemble des sources envoyées à 100 Mo sur Hobby, 1 Go sur Pro.
-[Documentation Vercel](https://vercel.com/docs/limits#static-file-uploads).
-L’upload de la vidéo par Git LFS utilise les quotas du compte GitHub. Le site charge
-la vidéo seulement à la demande. Aucun abonnement ni déploiement Vercel n’a été créé.
+La compilation vérifie que l’URL configurée utilise HTTPS ; elle ne garantit
+pas la disponibilité du fichier chez Cloudinary. Après l’import, vérifier la lecture
+sur le site publié. Le fichier doit être public, et l’URL doit pointer sur la vidéo,
+pas sur une page de la console Cloudinary. Aucun upload Cloudinary n’est automatisé
+par le site ; il n’y a pas de backend ni de clé API.
