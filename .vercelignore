@@ -1,0 +1,5 @@
+node_modules
+*.zip
+DEPLOI-NETLIFY.txt
+ouvrir-local.bat
+netlify.toml

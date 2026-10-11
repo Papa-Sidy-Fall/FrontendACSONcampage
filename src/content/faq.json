@@ -1,0 +1,404 @@
+[
+  {
+    "id": 1,
+    "categorie": "Le candidat",
+    "question": "Qui est Mame Youssou Diagne ?",
+    "reponse": "Mame Youssou Diagne est candidat à la présidence de l'Amicale des Cadres de Sonatel, l'ACSON. Il est ingénieur en télécommunications et Sonatélien depuis plus de 20 ans."
+  },
+  {
+    "id": 2,
+    "categorie": "Le candidat",
+    "question": "Quel âge a-t-il ?",
+    "reponse": "Mame Youssou Diagne a 47 ans."
+  },
+  {
+    "id": 3,
+    "categorie": "Le candidat",
+    "question": "Quelle est sa formation ?",
+    "reponse": "Il est ingénieur en télécommunications."
+  },
+  {
+    "id": 4,
+    "categorie": "Le candidat",
+    "question": "Depuis combien de temps travaille-t-il à Sonatel ?",
+    "reponse": "Mame Youssou Diagne évolue à Sonatel depuis 2006."
+  },
+  {
+    "id": 5,
+    "categorie": "Le candidat",
+    "question": "Où travaille-t-il actuellement ?",
+    "reponse": "Il exerce à la DR en tant que Chef de Service et Chef de Projet Technique sur les services et infrastructures réseaux."
+  },
+  {
+    "id": 6,
+    "categorie": "Le candidat",
+    "question": "Quelle est son expertise ?",
+    "reponse": "Son expertise couvre les télécommunications et réseaux, la gestion de projets, l'ingénierie et l'innovation, la qualité de service ainsi que le leadership et le management."
+  },
+  {
+    "id": 7,
+    "categorie": "Le candidat",
+    "question": "Quels domaines techniques maîtrise-t-il ?",
+    "reponse": "Ses domaines techniques comprennent notamment IP/MPLS, Broadband Data et ADSL/FTTH, ainsi que la gestion de projets et les services à valeur ajoutée."
+  },
+  {
+    "id": 8,
+    "categorie": "Le candidat",
+    "question": "Quelle est son expérience en gestion de projets ?",
+    "reponse": "Il possède plusieurs expériences en gestion de projets d'infrastructures et de services, notamment dans le domaine des réseaux et des télécommunications."
+  },
+  {
+    "id": 9,
+    "categorie": "Le candidat",
+    "question": "Quelle est sa motivation ?",
+    "reponse": "Sa motivation est d'insuffler une nouvelle dynamique à l'ACSON et de rapprocher l'Amicale de ses membres."
+  },
+  {
+    "id": 10,
+    "categorie": "Le candidat",
+    "question": "Pourquoi veut-il présider l'ACSON ?",
+    "reponse": "Il souhaite mettre son expérience, son énergie et son engagement au service de l'ACSON et contribuer à une communauté plus forte, plus utile et plus influente."
+  },
+  {
+    "id": 11,
+    "categorie": "Vision",
+    "question": "Quelle est sa vision pour l'ACSON ?",
+    "reponse": "Sa vision est de faire de l'ACSON une communauté unie, dynamique, solidaire et influente."
+  },
+  {
+    "id": 12,
+    "categorie": "Vision",
+    "question": "Que signifie « une nouvelle dynamique » ?",
+    "reponse": "Cette nouvelle dynamique consiste à se rapprocher des membres, développer les compétences, créer de la valeur, renforcer le vivre-ensemble, encourager l'innovation et moderniser l'ACSON."
+  },
+  {
+    "id": 13,
+    "categorie": "Vision",
+    "question": "Quelle place les membres occupent-ils dans cette vision ?",
+    "reponse": "Les membres sont au cœur du projet : se rapprocher d'eux et écouter leurs besoins sont des priorités."
+  },
+  {
+    "id": 14,
+    "categorie": "Vision",
+    "question": "Quel est le slogan de la candidature ?",
+    "reponse": "Sa signature de campagne est : « Rassembler. Valoriser. Inspirer. »"
+  },
+  {
+    "id": 15,
+    "categorie": "Vision",
+    "question": "Quels sont les grands engagements de gouvernance ?",
+    "reponse": "Les cinq engagements de gouvernance sont : Écoute, Inclusion, Utilité, Transparence et Continuité."
+  },
+  {
+    "id": 16,
+    "categorie": "Les six priorités",
+    "question": "Quelles sont les six priorités ?",
+    "reponse": "Les six priorités sont : Rassembler, Faire grandir, Créer de la valeur, Vivre ensemble, Inspirer & influencer, et Moderniser."
+  },
+  {
+    "id": 17,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce qu'ACSON Connect ?",
+    "reponse": "ACSON CONNECT vise à mieux identifier les compétences, les expertises et les personnes ressources. Il s’inscrit dans la priorité « Rassembler », avec le networking, le mentorat d’accueil et les échanges entre générations, pour trouver plus facilement le bon interlocuteur."
+  },
+  {
+    "id": 18,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce qu'ACSON Academy ?",
+    "reponse": "ACSON ACADEMY est un espace de développement des compétences autour du leadership, de l’IA, de l’innovation, de la stratégie et de la finance. La priorité « Faire grandir » prévoit aussi des formations certifiantes, des partenariats externes, du mentorat et du partage d’expérience."
+  },
+  {
+    "id": 19,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce qu'ACSON Privilèges ?",
+    "reponse": "ACSON PRIVILEGES vise à structurer des avantages négociés utiles dans la santé, le bien-être, les loisirs, le sport, le voyage, l’automobile et les services. Le programme prévoit aussi de rechercher des partenaires commerciaux et financiers pour apporter une valeur concrète aux membres."
+  },
+  {
+    "id": 20,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce que le Tournoi du numérique ?",
+    "reponse": "Le programme propose de faire grandir le Tournoi du Numérique comme initiative fédératrice. Il fait partie de la priorité « Vivre ensemble », aux côtés du sport inter-directions, des événements culturels et familiaux et de l’entraide organisée."
+  },
+  {
+    "id": 21,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce qu'ACSON Think Tank ?",
+    "reponse": "ACSON THINK TANK est un espace de réflexion et de partage d’expertise, notamment autour de la transformation digitale et du développement durable. La priorité « Inspirer & influencer » prévoit aussi des échanges sur les enjeux économiques, sociaux et technologiques."
+  },
+  {
+    "id": 22,
+    "categorie": "Les six priorités",
+    "question": "Qu'est-ce qu'ACSON 360 ?",
+    "reponse": "ACSON 360 vise à réunir information, services, participation et reporting dans un même environnement. La priorité « Moderniser » prévoit aussi une communication régulière, un espace digital dédié et la digitalisation des inscriptions."
+  },
+  {
+    "id": 23,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne la formation ?",
+    "reponse": "La priorité « Faire grandir » porte le développement des compétences, notamment avec ACSON ACADEMY."
+  },
+  {
+    "id": 24,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne l'IA ?",
+    "reponse": "L'IA fait partie des thèmes d'ACSON ACADEMY pour développer les compétences et l'employabilité."
+  },
+  {
+    "id": 25,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne l'innovation ?",
+    "reponse": "L'innovation fait partie des initiatives d'ACSON ACADEMY et d'ACSON THINK TANK."
+  },
+  {
+    "id": 26,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne la solidarité ?",
+    "reponse": "La solidarité est portée par la priorité « Vivre ensemble » et par la vision d'une communauté unie et solidaire."
+  },
+  {
+    "id": 27,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne le sport ?",
+    "reponse": "Le sport fait partie d'ACSON PRIVILEGES et de la priorité « Vivre ensemble »."
+  },
+  {
+    "id": 28,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne la famille ?",
+    "reponse": "La priorité « Vivre ensemble » fait une place à la famille, notamment à travers les événements et activités."
+  },
+  {
+    "id": 29,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne la digitalisation ?",
+    "reponse": "La digitalisation est au cœur de la priorité « Moderniser », incarnée par ACSON 360."
+  },
+  {
+    "id": 30,
+    "categorie": "Les six priorités",
+    "question": "Quelle priorité concerne le networking ?",
+    "reponse": "Le networking fait partie d'ACSON CONNECT, dans la priorité « Rassembler »."
+  },
+  {
+    "id": 31,
+    "categorie": "Gouvernance",
+    "question": "Que signifie « Écoute » ?",
+    "reponse": "L’écoute consiste à partir des besoins réels des membres, plutôt que de ce qu’on imagine pour eux."
+  },
+  {
+    "id": 32,
+    "categorie": "Gouvernance",
+    "question": "Que signifie « Inclusion » ?",
+    "reponse": "L’inclusion consiste à donner sa place à chacun, sans exception."
+  },
+  {
+    "id": 33,
+    "categorie": "Gouvernance",
+    "question": "Que signifie « Utilité » ?",
+    "reponse": "L’utilité consiste à privilégier les actions à impact concret et vérifiable."
+  },
+  {
+    "id": 34,
+    "categorie": "Gouvernance",
+    "question": "Que signifie « Transparence » ?",
+    "reponse": "La transparence consiste à informer les membres, rendre compte et mesurer les résultats, avec une communication claire et régulière."
+  },
+  {
+    "id": 35,
+    "categorie": "Gouvernance",
+    "question": "Que signifie « Continuité » ?",
+    "reponse": "La continuité consiste à préserver les acquis et à inscrire l’action dans la durée."
+  },
+  {
+    "id": 36,
+    "categorie": "Gouvernance",
+    "question": "Quelle place est accordée à l'écoute ?",
+    "reponse": "L'écoute est l'un des cinq engagements de gouvernance. Elle consiste à partir des besoins réels des membres."
+  },
+  {
+    "id": 37,
+    "categorie": "Gouvernance",
+    "question": "La transparence fait-elle partie du projet ?",
+    "reponse": "Oui. La transparence est l'un des cinq engagements de gouvernance : informer les membres, rendre compte et mesurer les résultats."
+  },
+  {
+    "id": 38,
+    "categorie": "Gouvernance",
+    "question": "L'inclusion fait-elle partie des engagements ?",
+    "reponse": "Oui. L'inclusion est l'un des cinq engagements de gouvernance : donner sa place à chacun, sans exception."
+  },
+  {
+    "id": 39,
+    "categorie": "Valeurs et personnalité",
+    "question": "Quelles sont les valeurs mises en avant ?",
+    "reponse": "Les valeurs de la candidature sont :\n\nEngagement — Intégrité — Esprit d'équipe — Innovation — Solidarité."
+  },
+  {
+    "id": 40,
+    "categorie": "Valeurs et personnalité",
+    "question": "Que signifie « Engagement » ?",
+    "reponse": "L'engagement signifie donner le meilleur de soi."
+  },
+  {
+    "id": 41,
+    "categorie": "Valeurs et personnalité",
+    "question": "Que signifie « Intégrité » ?",
+    "reponse": "L'intégrité signifie agir de manière éthique et transparente."
+  },
+  {
+    "id": 42,
+    "categorie": "Valeurs et personnalité",
+    "question": "Que signifie « Esprit d'équipe » ?",
+    "reponse": "L'esprit d'équipe signifie réussir ensemble."
+  },
+  {
+    "id": 43,
+    "categorie": "Valeurs et personnalité",
+    "question": "Que signifie « Innovation » ?",
+    "reponse": "L'innovation signifie oser pour progresser."
+  },
+  {
+    "id": 44,
+    "categorie": "Valeurs et personnalité",
+    "question": "Que signifie « Solidarité » ?",
+    "reponse": "La solidarité signifie soutenir et partager."
+  },
+  {
+    "id": 45,
+    "categorie": "Valeurs et personnalité",
+    "question": "Quels sont ses centres d'intérêt ?",
+    "reponse": "Mame Youssou Diagne apprécie la technologie, la transformation digitale, le sport, les moments en famille, les amis, les voyages et la découverte du monde."
+  },
+  {
+    "id": 46,
+    "categorie": "Valeurs et personnalité",
+    "question": "Est-il passionné par son métier ?",
+    "reponse": "Oui. Son travail le passionne, notamment la mise sur le marché d'offres et la contribution au développement de l'activité de Sonatel."
+  },
+  {
+    "id": 47,
+    "categorie": "Valeurs et personnalité",
+    "question": "Quelle est sa phrase de présentation ?",
+    "reponse": "L'une de ses phrases de présentation est : « L'expertise au service d'une communauté. »"
+  },
+  {
+    "id": 48,
+    "categorie": "Programme détaillé",
+    "question": "Quelles sont les mesures concrètes prévues ?",
+    "reponse": "Le programme prévoit notamment un mentorat d’accueil, l’identification des expertises avec ACSON CONNECT, des formations avec ACSON ACADEMY, des avantages avec ACSON PRIVILEGES, des activités sportives et familiales, ACSON THINK TANK et la digitalisation avec ACSON 360. Vous pouvez choisir un axe pour découvrir ses actions."
+  },
+  {
+    "id": 49,
+    "categorie": "Programme détaillé",
+    "question": "Quel est le calendrier de mise en œuvre des propositions ?",
+    "reponse": "Pour la première année, 2026–2027, le programme prévoit ACSON CONNECT, ACSON ACADEMY, le mentorat, ACSON PRIVILEGES, ACSON THINK TANK et ACSON 360, ainsi qu’un calendrier annuel d’activités et un tableau de bord de suivi. Les dates de lancement de chaque initiative ne sont pas précisées."
+  },
+  {
+    "id": 50,
+    "categorie": "Programme détaillé",
+    "question": "Quel budget est prévu pour les différentes initiatives ?",
+    "reponse": "Le budget détaillé des initiatives n'est pas annoncé. Je ne peux donc pas vous communiquer de montant précis."
+  },
+  {
+    "id": 51,
+    "categorie": "Programme détaillé",
+    "question": "Quel est le message central du programme ?",
+    "reponse": "Faire de l’ACSON une communauté qui pèse, pas seulement qui rassemble : une communauté unie, dynamique, solidaire et influente qui transforme les expériences et les compétences individuelles en richesse collective."
+  },
+  {
+    "id": 52,
+    "categorie": "Programme détaillé",
+    "question": "Que propose le programme pour accueillir les nouveaux cadres ?",
+    "reponse": "Mettre en place un mentorat d’accueil pour chaque nouveau cadre dès son premier mois, afin de faciliter son intégration et son accès au réseau."
+  },
+  {
+    "id": 53,
+    "categorie": "Programme détaillé",
+    "question": "Comment favoriser les échanges entre générations ?",
+    "reponse": "Le programme propose d’encourager les échanges entre générations de cadres pour transmettre l’expérience, développer l’entraide et renforcer la compréhension mutuelle."
+  },
+  {
+    "id": 54,
+    "categorie": "Programme détaillé",
+    "question": "Que prévoit le programme pour les formations certifiantes ?",
+    "reponse": "Faciliter l’accès à des formations certifiantes et à des partenariats externes de premier niveau, en tenant compte des compétences qui feront la différence dans les prochaines années."
+  },
+  {
+    "id": 55,
+    "categorie": "Programme détaillé",
+    "question": "Comment les cadres pourront-ils partager leur expérience ?",
+    "reponse": "Le programme propose de transformer les parcours individuels en richesse collective grâce au mentorat, au partage d’expérience et à la transmission des compétences."
+  },
+  {
+    "id": 56,
+    "categorie": "Programme détaillé",
+    "question": "Comment seront choisis les partenaires d’ACSON PRIVILEGES ?",
+    "reponse": "Les partenariats seront sélectionnés et négociés sur la base de leur utilité réelle pour les membres, avec des bénéfices concrets et mesurables. Les partenaires précis et les taux de réduction ne sont pas annoncés."
+  },
+  {
+    "id": 57,
+    "categorie": "Programme détaillé",
+    "question": "Qu’est-ce qui est prévu pour le sport entre directions ?",
+    "reponse": "Développer des activités sportives inter-directions afin de créer des liens entre collègues au-delà de leurs structures habituelles."
+  },
+  {
+    "id": 58,
+    "categorie": "Programme détaillé",
+    "question": "Quelles actions culturelles et familiales sont envisagées ?",
+    "reponse": "Créer des événements culturels et familiaux qui donnent envie de participer et renforcent la convivialité. Les dates et la liste des événements ne sont pas précisées."
+  },
+  {
+    "id": 59,
+    "categorie": "Programme détaillé",
+    "question": "Comment accompagner les cadres dans les moments difficiles ?",
+    "reponse": "Le programme propose de renforcer l’accompagnement des cadres confrontés à des situations difficiles grâce à une entraide organisée. Les modalités et les montants d’aide ne sont pas précisés."
+  },
+  {
+    "id": 60,
+    "categorie": "Programme détaillé",
+    "question": "ACSON THINK TANK remplacera-t-il la gouvernance de Sonatel ?",
+    "reponse": "Non. ACSON THINK TANK est un espace de réflexion et de partage complémentaire à la gouvernance de l'entreprise, sans s'y substituer."
+  },
+  {
+    "id": 61,
+    "categorie": "Programme détaillé",
+    "question": "Comment les expertises des cadres seront-elles valorisées ?",
+    "reponse": "Le programme prévoit de mettre en lumière les compétences, expériences et parcours des cadres et de créer des espaces d’échange pour faire émerger les idées."
+  },
+  {
+    "id": 62,
+    "categorie": "Programme détaillé",
+    "question": "Que prévoit le programme pour les inscriptions et la communication ?",
+    "reponse": "Digitaliser les inscriptions et les participations, et mettre en place une communication régulière, claire et structurée pour faciliter l’accès à l’information et réduire les démarches."
+  },
+  {
+    "id": 63,
+    "categorie": "Programme détaillé",
+    "question": "Comment les engagements seront-ils suivis ?",
+    "reponse": "Le programme prévoit un tableau de bord de suivi et une communication régulière afin de mesurer et expliquer les résultats des engagements du mandat."
+  },
+  {
+    "id": 64,
+    "categorie": "Programme détaillé",
+    "question": "Le projet tient-il compte des acquis de l’ACSON ?",
+    "reponse": "Oui. Le projet consiste à préserver les acquis, renforcer ce qui fonctionne et ouvrir une nouvelle dynamique."
+  },
+  {
+    "id": 65,
+    "categorie": "Programme détaillé",
+    "question": "Sur quels enjeux l’ACSON souhaite-t-elle être une force de proposition ?",
+    "reponse": "L'ACSON souhaite être une force de proposition sur la performance, l'innovation, la digitalisation, la qualité de service et la réduction des coûts, en valorisant l'intelligence collective des cadres."
+  },
+  {
+    "id": 66,
+    "categorie": "Votre avis compte",
+    "question": "Sur quels sujets puis-je partager une proposition ?",
+    "reponse": "Le parcours « Votre avis compte » propose sept catégories : vie associative ; formation et compétences ; avantages membres ; solidarité ; sport, culture et famille ; digital et communication ; autre proposition."
+  },
+  {
+    "id": 67,
+    "categorie": "Programme",
+    "question": "Comment recevoir le programme complet ?",
+    "reponse": "Téléchargez le programme complet au format PDF avec le bouton « Programme complet » ou le lien ci-dessous."
+  }
+]
