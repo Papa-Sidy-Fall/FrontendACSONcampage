@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import faq from '../content/faq.json';
 import { isGreeting, searchFaq } from '../lib/faqSearch';
 import useDialog from '../hooks/useDialog';
@@ -19,12 +19,22 @@ export default function Chatbot() {
   const [typing, setTyping] = useState(false);
   const replyTimerRef = useRef(null);
   const scrollRef = useRef(null);
+  const latestMessageRef = useRef(null);
   const inputRef = useRef(null);
   const launcherRef = useRef(null);
   const dialogRef = useDialog(open, () => setOpen(false), launcherRef);
 
-  useEffect(() => {
-    if (open && scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+  useLayoutEffect(() => {
+    const conversation = scrollRef.current;
+    if (!open || !conversation) return;
+    if (typing) {
+      conversation.scrollTop = conversation.scrollHeight;
+    } else if (latestMessageRef.current) {
+      // Read new replies from their beginning, including menus taller than the panel.
+      // offsetTop ignores the message's entrance animation and scrolls only this log.
+      const padding = parseFloat(window.getComputedStyle(conversation).paddingTop);
+      conversation.scrollTop = latestMessageRef.current.offsetTop - padding;
+    }
   }, [open, messages, typing]);
 
   useEffect(() => () => window.clearTimeout(replyTimerRef.current), []);
@@ -96,7 +106,7 @@ export default function Chatbot() {
             <button type="button" aria-label="Effacer la conversation et recommencer" onClick={() => { cancelReply(); setMessages([welcome()]); setInput(''); }}>Recommencer</button>
           </nav>
           <div ref={scrollRef} className="chat-messages" role="log" aria-label="Conversation" aria-live="polite" aria-relevant="additions" tabIndex={0}>
-            {messages.map((message, index) => <div key={index} className={`chat-message ${message.role === 'user' ? 'chat-message-user' : 'chat-message-bot'}`}>
+            {messages.map((message, index) => <div key={index} ref={index === messages.length - 1 ? latestMessageRef : null} className={`chat-message ${message.role === 'user' ? 'chat-message-user' : 'chat-message-bot'}`}>
               <span className="sr-only">{message.role === 'user' ? 'Vous : ' : 'Guide ACSON : '}</span>
               <p>{message.text}</p>
               {message.download && <a href={programme} download className="chat-download">Télécharger le programme complet (PDF) ↓</a>}
