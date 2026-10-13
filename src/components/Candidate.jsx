@@ -1,5 +1,4 @@
 import SectionHeader from './SectionHeader';
-import PresentationVideo from './PresentationVideo';
 
 export default function Candidate() {
   return (
@@ -40,7 +39,6 @@ export default function Candidate() {
             <p data-motion="rise" className="mt-2 text-sm md:text-base leading-relaxed text-white/85">
               Parce que l’ACSON mérite une nouvelle dynamique — plus proche, plus utile, plus fédératrice — au service de chaque cadre.
             </p>
-            <PresentationVideo />
           </div>
         </div>
       </div>

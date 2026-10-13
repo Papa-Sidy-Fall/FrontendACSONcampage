@@ -144,7 +144,10 @@ uniquement dans le navigateur du visiteur, sans envoi à l’équipe. Aucune col
   Le pointeur MOV et la règle Git LFS ont été retirés de la version actuelle.
   Les archives des anciens commits restent inchangées.
 - Aperçu : `public/videos/presentation-poster.jpg`, extrait à 2 secondes.
-- Présentation dans la rubrique « Pourquoi je m’engage ». Lecture native lorsque
+- Présentation dès l’accueil : carte vidéo à droite sur ordinateur, avant le texte
+  sur téléphone et tablette. Le format portrait reste entier, sans recadrage.
+  Le bouton « Lire la vidéo » démarre la lecture et affiche les commandes natives.
+  Lecture native lorsque
   le navigateur peut lire le MP4. En cas d’échec de lecture, aperçu, explication et
   lien vers la vidéo restent disponibles. La détection HEVC de l’ancien fichier
   a été retirée : elle empêchait certains navigateurs de lire un MP4 compatible.
