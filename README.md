@@ -6,7 +6,7 @@ Aucun backend ni service d’IA n’est nécessaire. Les textes de campagne exis
 ## Lancer le site
 
 Prérequis : Node.js 22, version 22.12 ou supérieure.
-L’URL Cloudinary de la vidéo est déjà configurée dans `src/content/presentation.js`.
+Les URL Cloudinary des vidéos sont déjà configurées dans `src/content/presentation.js`.
 Aucune variable d’environnement n’est nécessaire.
 
 ```bash
@@ -39,10 +39,12 @@ Le site et son chatbot fonctionnent dans le navigateur, sans backend.
 5. Déployer la dernière version de `main`. Si le projet a déjà été créé, vérifier
    que le déploiement utilise le nouveau commit, puis lancer Redeploy si nécessaire.
 
-La vidéo est servie par Cloudinary. Git LFS n’est plus nécessaire pour déployer
+Les vidéos sont servies par Cloudinary. Git LFS n’est plus nécessaire pour déployer
 la version actuelle du site. Aucune clé API Cloudinary ni autre secret n’est requis.
 L’URL est publique et intégrée au JavaScript visible dans le navigateur. Pour
-remplacer la vidéo, modifier `src/content/presentation.js` ou utiliser la variable
+remplacer ou réordonner les vidéos, modifier le tableau `presentationVideos` dans
+`src/content/presentation.js`. Pour remplacer uniquement l’URL de la première vidéo,
+utiliser la variable
 facultative `VITE_PRESENTATION_VIDEO_URL` avec une autre URL HTTPS publique directe,
 puis relancer le build. `.env.example` documente cette option pour les essais locaux.
 
@@ -130,7 +132,16 @@ Les dialogues prennent en charge Échap, le parcours clavier et le retour du foc
 Le formulaire d’idées existant conserve son fonctionnement local : les idées sont enregistrées
 uniquement dans le navigateur du visiteur, sans envoi à l’équipe. Aucune collecte distante n’a été ajoutée.
 
-## Vidéo de présentation
+## Vidéos de présentation
+
+- La vidéo reçue le 22 octobre 2026 apparaît en premier : MP4 Cloudinary,
+  137,665 secondes (2 min 18), 576 × 1024. Aperçu local extrait à 10 secondes :
+  `public/videos/message-2026-10-22-poster.jpg`.
+- L’ancienne vidéo reste en deuxième position. Les boutons « Précédent » et
+  « Suivant » ainsi que le compteur permettent de choisir une vidéo.
+  Le changement arrête la lecture en cours et affiche l’aperçu de la vidéo choisie,
+  sans lecture automatique. Les boutons sont désactivés aux extrémités.
+  Durée, aperçu et téléchargement correspondent toujours à la vidéo sélectionnée.
 
 - Original conservé intact hors dépôt : `../Vidéo de présentation/HDRR.MOV`,
   107 750 936 octets, durée 78,6 secondes, HEVC Main, 1080 × 1920, 30 images/s,
@@ -153,7 +164,7 @@ uniquement dans le navigateur du visiteur, sans envoi à l’équipe. Aucune col
   a été retirée : elle empêchait certains navigateurs de lire un MP4 compatible.
 - Pas de lecture automatique. `preload="none"` évite de charger la vidéo au démarrage.
 
-La compilation vérifie que l’URL configurée utilise HTTPS ; elle ne garantit
+La compilation vérifie que les URL configurées utilisent HTTPS ; elle ne garantit
 pas la disponibilité du fichier chez Cloudinary. Après l’import, vérifier la lecture
 sur le site publié. Le fichier doit être public, et l’URL doit pointer sur la vidéo,
 pas sur une page de la console Cloudinary. Aucun upload Cloudinary n’est automatisé
